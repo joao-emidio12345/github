@@ -11,8 +11,8 @@ header ul li button{
     font-size: var(--body-font-size, 16px);
 }
 
-image .arrow{
-    width: 16px;
+li image.arrow{
+    width: 8px;
 }
 
 header ul{
@@ -28,13 +28,50 @@ header ul li{
 
 }
 
-ul img{
+ul img.logo-branca{
     width: 32px;
     margin-right: 16px;
 }
 
-input .pesquisa{
+input.pesquisa{
+    position: relative;
+    right: -27px;
+    box-sizing: border-box;
+    padding: 8px 12px 8px 12px;
+    font-size: 14px;
     background-color: rgba(46,55,74,.82) !important;
+    border: solid 1px;
     border-color: #57606a;
+    border-radius: 8px;
+    width: 240px;
+    height: 38px;
     color: #ffffff;
+}
+
+svg.mr-1-header-search-key-slash{
+    position: relative;
+    top: 4px;
+    margin-right: 8px;
+}
+
+div.searcher{
+    float: right;
+    display: flex !important;
+    align-items: center;
+    padding-top: 10px;
+}
+
+div.box-search{
+    margin-right: 16px;
+}
+
+a.cadastrar{
+    display: inline-block;
+    position: relative;
+    margin-right: 16px;
+    box-sizing: border-box;
+    text-align: center;
+    color: #ffffff;
+    white-space: nowrap;
+    background: transparent;
 }

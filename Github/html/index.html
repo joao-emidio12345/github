@@ -10,7 +10,7 @@
     <header>
         <div class="navigator">
             <ul>
-                <img src="../images/iconmonstr-github-1.png" />
+                <img class="logo-branca" src="../images/iconmonstr-github-1.png" />
                 <li>
                     <button type="button">Product <image class="arrow" style="width: 8px;" src="../images/iconmonstr-angel-down-thin.png"/></button>
                     <button type="button">Solutions <image class="arrow" style="width: 8px;" src="../images/iconmonstr-angel-down-thin.png"/></button>
@@ -20,9 +20,13 @@
             </ul>
         </div>
         <div class="searcher">
-            <form action="search">
-                <label><input class="pesquisa" name="pesquisar" placeholder="Search GitHub" autocomplete="off" role="combobox"/><svg xmlns="http://www.w3.org/2000/svg" width="22" height="20" aria-hidden="true" class="mr-1 header-search-key-slash"><path fill="none" stroke="#979A9C" opacity=".4" d="M3.5.5h12c1.7 0 3 1.3 3 3v13c0 1.7-1.3 3-3 3h-12c-1.7 0-3-1.3-3-3v-13c0-1.7 1.3-3 3-3z"></path><path fill="#979A9C" d="M11.8 6L8 15.1h-.9L10.8 6h1z"></path></svg></label>
-            </form>
+            <div class="box-search">
+                <form class="form-search" action="search">
+                    <label><input class="pesquisa" name="pesquisar" placeholder="Search GitHub" autocomplete="off" role="combobox"/><svg xmlns="http://www.w3.org/2000/svg" width="22" height="20" aria-hidden="true" class="mr-1-header-search-key-slash"><path fill="none" stroke="#979A9C" opacity=".4" d="M3.5.5h12c1.7 0 3 1.3 3 3v13c0 1.7-1.3 3-3 3h-12c-1.7 0-3-1.3-3-3v-13c0-1.7 1.3-3 3-3z"></path><path fill="#979A9C" d="M11.8 6L8 15.1h-.9L10.8 6h1z"></path></svg></label>
+                </form>
+            </div>
+            <a class="cadastrar" href="/login">Sign in</a>
+            <a class="entrar" href="#">Sign up</a>
         </div>
     </header>
 </body>
