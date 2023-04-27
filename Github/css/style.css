@@ -1,11 +1,30 @@
 @charset "UTF-8";
 
 body{
-    background-color: black;
+    background-image: url("../images/hero-bg.webp");
+    background-position-x: center;
+}
+
+div.menu{
+    display: flex;
+    position: relative;
+    height: 100%;
+    padding-right: 16px;
+    padding-left: 16px;
+    max-width: 1280px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+div.logo-invertida{
+    display: flex;
+    width: auto;
+    align-items: center;
 }
 
 header ul li button{
     color: white;
+    border: 0px;
     background: transparent;
     font-family: -apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
     font-size: var(--body-font-size, 16px);
@@ -16,7 +35,7 @@ li image.arrow{
 }
 
 header ul{
-
+    padding: 0px;
     float: left;
     display: inline;
 
@@ -24,11 +43,10 @@ header ul{
 
 header ul li{
     float: right;
-    padding-bottom: 100px;
 
 }
 
-ul img.logo-branca{
+img.logo-branca{
     width: 32px;
     margin-right: 16px;
 }
@@ -55,10 +73,10 @@ svg.mr-1-header-search-key-slash{
 }
 
 div.searcher{
-    float: right;
     display: flex !important;
     align-items: center;
-    padding-top: 10px;
+    position: relative;
+    left: 403px;
 }
 
 div.box-search{
@@ -74,4 +92,31 @@ a.cadastrar{
     color: #ffffff;
     white-space: nowrap;
     background: transparent;
+    text-decoration: none;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
+}
+
+.cadastrar:hover{
+    color: #d0d7de;
+}
+
+a.entrar{
+    display: inline-block;
+    position: relative;
+    box-sizing: border-box;
+    text-align: center;
+    color: #ffffff;
+    padding: 5px 9px 5px 9px;
+    white-space: nowrap;
+    border: solid 1px;
+    border-color: #ffffff;
+    border-radius: 8px;
+    background: transparent;
+    text-decoration: none;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
+}
+
+a.entrar:hover{
+    color: #d0d7de;
+    border-color: #d0d7de;
 }
