@@ -5,7 +5,7 @@
     <link rel="shortcut icon" href="images/github.svg" type="image/x-icon">
     <title>GitHub: Let’s build from here · GitHub</title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
-    <script src="script.js"></script>
+    <script src="js/script.js"></script>
 </head>
 <body>
     <header>
@@ -66,22 +66,48 @@
             </div>
         </div>
     </div>
-    <div id="main">
-        <form id="postForm">
-          <label for="title">Título:</label>
-          <input type="text" id="title" required>
-        
-          <label for="image">Imagem:</label>
-          <input type="text" id="image">
-        
-          <label for="date">Data:</label>
-          <input type="date" id="date" required>
-        
-          <label for="content">Conteúdo:</label>
-          <textarea id="content" required></textarea>
-        
-          <button type="submit">Enviar</button>
-        </form>
-    </div>
+    <button type="button" class="button blue mobile" id="adicionarPostagem">Adicionar Postagem</button>
+        <table id="tablePost" class="posts">
+            <tbody>
+
+            </tbody>
+        </table>
+        <!-- MODAL APAGAR -->
+        <div class="modal" id="modal2">
+            <div class="modal-content">
+                <header class="modal-header">
+                    <h2>Excluir Postagem</h2>
+                    <span class="modal-close" id="modalClose2">&#10006;</span>
+                </header>
+                <div id='avisoDelete'>
+                    <!-- aviso de delete -->
+                </div>
+                <footer class="modal-footer">
+                    <button id="apagar" class="button red">Apagar</button>
+                    <button id="cancelar2" class="button blue">Cancelar</button>
+                </footer>
+            </div>
+        </div>
+
+        <!-- MODAL CRIAR E EDITAR -->
+        <div class="modal" id="modal">
+            <div class="modal-content">
+                <header class="modal-header">
+                    <h2>Nova Postagem</h2>
+                    <span class="modal-close" id="modalClose">&#10006;</span>
+                </header>
+                <form id="form" class="modal-form">
+                    <input type="text" id="titulo" data-index="new" class="modal-field" placeholder="Título da Postagem"
+                        required>
+                    <input type="file" id="image" class="modal-field" required>
+                    <input type="date" id="date" class="modal-field" required>
+                    <input type="text" id="content" class="modal-field" placeholder="Hoje eu fiz um site..." required>
+                </form>
+                <footer class="modal-footer">
+                    <button id="salvar" class="button green">Salvar</button>
+                    <button id="cancelar" class="button blue">Cancelar</button>
+                </footer>
+            </div>
+        </div>
 </body>
 </html>
